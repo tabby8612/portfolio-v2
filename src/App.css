@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-primary-font: "DM Mono", monospace;
+  --font-secondary-font: "Urbanist", sans-serif;
+
+  --color-primary-color: #62a92b;
+  --color-secondary-color: #fb77bb;
+  --color-primary-bg: #272730;
+
+  --animate-line: line 1s 0.2s ease-out forwards;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  @variant dark {
+    background-color: #1f1f24;
+  }
+}
+
+@keyframes line {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 70%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.line {
+  @apply after:h-1 after:bg-primary-color after:absolute after:-bottom-5 after:left-0 after:rounded-2xl hover:after:animate-line;
+}
