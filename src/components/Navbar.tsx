@@ -13,7 +13,7 @@ export default function Navbar({ contactHandlerFn, mobNavFn }: Props) {
 
   return (
     <>
-      <nav className="bg-primary-bg flex gap-5 justify-between h-16 md:h-20 items-center rounded-2xl">
+      <nav className="bg-primary-bg flex gap-5 justify-between h-16 md:h-20 items-center rounded-2xl relative z-10 top-2">
         <AlignLeft
           className="bg-stone-700 md:p-7 p-5 rounded-tl-lg rounded-bl-lg cursor-pointer text-white hidden md:block"
           onClick={contactHandlerFn}
