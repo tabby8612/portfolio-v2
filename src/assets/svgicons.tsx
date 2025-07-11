@@ -157,3 +157,207 @@ export function OutlineFileDownload(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function Mobile(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      width="2em"
+      height="2em"
+      {...props}>
+      <path
+        fill="currentColor"
+        d="M11.5 0h-7C3.675 0 3 .675 3 1.5v13c0 .825.675 1.5 1.5 1.5h7c.825 0 1.5-.675 1.5-1.5v-13c0-.825-.675-1.5-1.5-1.5M6 .75h4v.5H6zM8 15a1 1 0 1 1 0-2a1 1 0 0 1 0 2m4-3H4V2h8z"></path>
+    </svg>
+  );
+}
+
+export function CoinsStack(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+      {...props}>
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2">
+        <ellipse
+          cx="12"
+          cy="6"
+          rx="9"
+          ry="3"></ellipse>
+        <path d="M3 10c0 1.7 4 3 9 3s9-1.3 9-3M3 14c0 1.7 4 3 9 3s9-1.3 9-3"></path>
+        <path d="M3 6v12c0 1.7 4 3 9 3s9-1.3 9-3V6"></path>
+      </g>
+    </svg>
+  );
+}
+
+export function Server(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      width="2em"
+      height="2em"
+      {...props}>
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M2 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm14 1a1 1 0 1 1-2 0a1 1 0 0 1 2 0M2 13a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm14 1a1 1 0 1 1-2 0a1 1 0 0 1 2 0"
+        clipRule="evenodd"></path>
+    </svg>
+  );
+}
+
+export function ApiSolid(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+      {...props}>
+      <path
+        fill="currentColor"
+        d="M3.53 21.53a.75.75 0 0 1-1.06-1.06l2.01-2.011c-.774-1.073-.908-2.265-.753-3.29c.178-1.172.743-2.2 1.243-2.7l1.5-1.5a.75.75 0 0 1 1.06 0l5.5 5.5a.75.75 0 0 1 0 1.061l-1.5 1.5c-.5.5-1.527 1.065-2.699 1.243c-1.025.155-2.217.02-3.29-.754zm7.5-11a.75.75 0 1 1-1.06-1.06L11.44 8l-.47-.47a.75.75 0 0 1 0-1.06l1.5-1.5c.5-.5 1.527-1.065 2.699-1.243c1.025-.155 2.217-.02 3.29.754l2.01-2.011a.75.75 0 1 1 1.061 1.06l-2.01 2.012c.774 1.072.91 2.264.754 3.29c-.178 1.171-.743 2.198-1.243 2.698l-1.5 1.5a.75.75 0 0 1-1.06 0l-.47-.47l-1.47 1.47a.75.75 0 1 1-1.06-1.06l1.47-1.47l-2.44-2.44z"></path>
+    </svg>
+  );
+}
+
+export function BrowserWebsite1Solid(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      width="2em"
+      height="2em"
+      {...props}>
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M1.546 12.25V3.314h10.908v8.934a.204.204 0 0 1-.205.205H1.751a.204.204 0 0 1-.205-.205Zm-1.5-10.5C.046.81.81.047 1.751.047h10.498c.942 0 1.705.763 1.705 1.705V12.25c0 .942-.763 1.705-1.705 1.705H1.751A1.704 1.704 0 0 1 .046 12.25z"
+        clipRule="evenodd"></path>
+    </svg>
+  );
+}
+
+export function CodeSolid(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+      {...props}>
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth="2">
+        <path
+          strokeLinejoin="round"
+          d="m8 8l-4 4l4 4m8 0l4-4l-4-4"></path>
+        <path d="m14 5l-4 14"></path>
+      </g>
+    </svg>
+  );
+}
+
+export function DegreeHat(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      width="2em"
+      height="2em"
+      {...props}>
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth="4">
+        <path
+          fill="currentColor"
+          d="M2 17.4L23.022 9l21.022 8.4l-21.022 8.4z"></path>
+        <path
+          strokeLinecap="round"
+          d="M44.044 17.51v9.223m-32.488-4.908v12.442S16.366 39 23.022 39c6.657 0 11.467-4.733 11.467-4.733V21.825"></path>
+      </g>
+    </svg>
+  );
+}
+
+export function ThreeStarsSolid(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+      {...props}>
+      <path
+        fill="currentColor"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="m4.635 14.415l1.039-2.203a.357.357 0 0 1 .652 0l1.04 2.203l2.323.356c.298.045.416.429.2.649l-1.68 1.713l.396 2.421c.051.311-.26.548-.527.401L6 18.812l-2.078 1.143c-.267.147-.578-.09-.527-.4l.396-2.422l-1.68-1.713c-.217-.22-.098-.604.2-.65zm12 0l1.039-2.203a.357.357 0 0 1 .652 0l1.04 2.203l2.323.356c.298.045.416.429.2.649l-1.68 1.713l.396 2.421c.051.311-.26.548-.527.401L18 18.812l-2.078 1.143c-.267.147-.578-.09-.527-.4l.396-2.422l-1.68-1.713c-.216-.22-.098-.604.2-.65zm-6-9l1.039-2.203a.357.357 0 0 1 .652 0l1.04 2.203l2.323.356c.298.045.416.429.2.649l-1.68 1.713l.396 2.421c.051.311-.26.548-.527.401L12 9.812l-2.078 1.143c-.267.147-.578-.09-.527-.4l.396-2.422l-1.68-1.713c-.217-.22-.098-.604.2-.65z"></path>
+    </svg>
+  );
+}
+
+export function BaselineCircle(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+      {...props}>
+      <path
+        fill="currentColor"
+        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2"></path>
+    </svg>
+  );
+}
+
+export function ExternalLink(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="2em"
+      height="2em"
+      {...props}>
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+    </svg>
+  );
+}
+
+export function Github(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 64 64"
+      width="1em"
+      height="1em"
+      {...props}>
+      <path
+        fill="currentColor"
+        d="M32 0C14 0 0 14 0 32c0 21 19 30 22 30c2 0 2-1 2-2v-5c-7 2-10-2-11-5c0 0 0-1-2-3c-1-1-5-3-1-3c3 0 5 4 5 4c3 4 7 3 9 2c0-2 2-4 2-4c-8-1-14-4-14-15q0-6 3-9s-2-4 0-9c0 0 5 0 9 4c3-2 13-2 16 0c4-4 9-4 9-4c2 7 0 9 0 9q3 3 3 9c0 11-7 14-14 15c1 1 2 3 2 6v8c0 1 0 2 2 2c3 0 22-9 22-30C64 14 50 0 32 0"></path>
+    </svg>
+  );
+}

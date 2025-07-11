@@ -3,6 +3,7 @@ import { BorderBeam } from "./magicui/border-beam";
 import HeroSlider from "./swiper/hero-slider";
 import { OutlineFileDownload } from "@/assets/svgicons";
 import CV from "@/assets/Tabish CV 08-Jul.pdf";
+import profileImage from "@/assets/profolioimage.png";
 
 export default function Hero() {
   return (
@@ -67,8 +68,8 @@ export default function Hero() {
         id="hero-image"
         className="mx-auto">
         <img
-          src="https://zelio-developer.botble.com/storage/code/general/people.png"
-          alt=""
+          src={profileImage}
+          alt="Tabish photo"
         />
       </div>
     </div>
