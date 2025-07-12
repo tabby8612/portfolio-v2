@@ -7,19 +7,19 @@ export default function Qualification() {
   return (
     <section
       id="qualifications"
-      className="min-h-[650px] w-10/12 mx-auto mt-7 rounded-2xl p-10 grid grid-cols-1 md:grid-cols-2 gap-10 relative">
-      <BorderBeam
-        borderWidth={3}
-        size={100}
-        className="from-transparent via-primary-color to-transparent"
-        duration={3}
-        transition={{
-          duration: 10,
-        }}
-      />
+      className="w-11/12 mt-10 rounded-2xl px-15 mx-auto grid grid-cols-1 md:grid-cols-2 gap-7 relative">
       <div
         id="education"
-        className="dark:bg-primary-bg rounded-lg p-8 ">
+        className="dark:bg-primary-bg bg-white rounded-lg p-8 relative">
+        <BorderBeam
+          borderWidth={3}
+          size={100}
+          className="from-transparent via-primary-color to-transparent"
+          duration={3}
+          transition={{
+            duration: 10,
+          }}
+        />
         <div className="flex gap-3 items-center my-4">
           <DegreeHat className="text-primary-color" />
           <h1 className="text-4xl font-primary-font font-medium">Education</h1>
@@ -28,7 +28,16 @@ export default function Qualification() {
       </div>
       <div
         id="certificate"
-        className="dark:bg-primary-bg rounded-lg p-8 ">
+        className="dark:bg-primary-bg rounded-lg p-8 relative bg-white">
+        <BorderBeam
+          borderWidth={3}
+          size={100}
+          className="from-transparent via-primary-color to-transparent"
+          duration={3}
+          transition={{
+            duration: 10,
+          }}
+        />
         <div className="flex gap-3 items-center my-4">
           <ThreeStarsSolid className="text-primary-color" />
           <h1 className="text-4xl font-primary-font font-medium">Certificates</h1>

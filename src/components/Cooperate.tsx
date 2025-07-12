@@ -44,7 +44,9 @@ export default function Cooperate() {
   ];
 
   return (
-    <section className="dark:bg-primary-bg dark:text-white min-h-[650px] w-10/12 mx-auto mt-7 rounded-2xl py-10 relative">
+    <section
+      id="cooperation"
+      className="dark:bg-primary-bg bg-white dark:text-white min-h-[650px] w-10/12 mx-auto mt-7 rounded-2xl py-10 relative">
       {
         <BorderBeam
           borderWidth={3}

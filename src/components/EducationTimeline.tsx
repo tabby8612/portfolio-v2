@@ -1,5 +1,6 @@
 import { Timeline, TimelineContent, TimelineDate, TimelineHeader, TimelineIndicator, TimelineItem, TimelineSeparator, TimelineTitle } from "@/components/ui/timeline";
 import { CheckIcon } from "lucide-react";
+import { BorderBeam } from "./magicui/border-beam";
 
 const items = [
   {
@@ -28,6 +29,15 @@ const items = [
 export default function EducationTimeline() {
   return (
     <Timeline defaultValue={4}>
+      <BorderBeam
+        borderWidth={3}
+        size={100}
+        className="from-transparent via-primary-color to-transparent"
+        duration={3}
+        transition={{
+          duration: 10,
+        }}
+      />
       {items.map((item) => (
         <TimelineItem
           key={item.id}
@@ -45,7 +55,7 @@ export default function EducationTimeline() {
               />
             </TimelineIndicator>
           </TimelineHeader>
-          <TimelineContent className="text-white">{item.description}</TimelineContent>
+          <TimelineContent className="dark:text-white">{item.description}</TimelineContent>
         </TimelineItem>
       ))}
     </Timeline>

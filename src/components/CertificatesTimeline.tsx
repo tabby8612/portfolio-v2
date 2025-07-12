@@ -19,19 +19,12 @@ const items = [
   {
     id: 3,
     date: "2025",
-    title: "PHP",
-    description: "Coding Faculty Solutions",
-    isActive: true,
-  },
-  {
-    id: 4,
-    date: "2025",
     title: "Laravel",
     description: "Coding Faculty Solutions",
     isActive: true,
   },
   {
-    id: 5,
+    id: 4,
     date: "2025",
     title: "Typescript",
     description: "Academind by Maximilian Schwarzuller",
@@ -59,7 +52,7 @@ export default function CertificateTimeline() {
               />
             </TimelineIndicator>
           </TimelineHeader>
-          <TimelineContent className="text-white">{item.description}</TimelineContent>
+          <TimelineContent className="dark:text-white">{item.description}</TimelineContent>
         </TimelineItem>
       ))}
       <p className="text-center text-white/50">And More...</p>

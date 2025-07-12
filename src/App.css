@@ -156,6 +156,21 @@ body {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-stone-200 text-foreground;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: red;
+}
+
+.swiper-button-prev {
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+}
+
+html {
+  scroll-behavior: smooth;
 }

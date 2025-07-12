@@ -15,7 +15,7 @@ export default function Navbar({ contactHandlerFn, mobNavFn }: Props) {
     <>
       <nav className="bg-primary-bg flex gap-5 justify-between h-16 md:h-20 items-center rounded-2xl relative z-10 top-2">
         <AlignLeft
-          className="bg-stone-700 md:p-7 p-5 rounded-tl-lg rounded-bl-lg cursor-pointer text-white hidden md:block"
+          className="bg-stone-700 md:p-8 p-5 rounded-tl-lg rounded-bl-lg cursor-pointer text-white hidden md:block text-md"
           onClick={contactHandlerFn}
         />
         <div className="flex gap-1 items-center">
@@ -23,11 +23,21 @@ export default function Navbar({ contactHandlerFn, mobNavFn }: Props) {
           <p className="md:text-xl text-md font-primary-font bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent pr-3">Tabish Sajwani</p>
         </div>
         <ul className="md:flex gap-10 font-primary-font text-lg hidden">
-          <li className="cursor-pointer tracking-wider relative text-white line">Home</li>
-          <li className="cursor-pointer tracking-wider relative text-white line">Services</li>
-          <li className="cursor-pointer tracking-wider relative text-white line">Portfolio</li>
-          <li className="cursor-pointer tracking-wider relative text-white line">Pricing</li>
-          <li className="cursor-pointer tracking-wider relative text-white line">Contact</li>
+          <a href="#hero">
+            <li className="cursor-pointer tracking-wider relative text-white line">Home</li>
+          </a>
+          <a href="#cooperation">
+            <li className="cursor-pointer tracking-wider relative text-white line">Services</li>
+          </a>
+          <a href="#projects">
+            <li className="cursor-pointer tracking-wider relative text-white line">Portfolio</li>
+          </a>
+          <a href="#skills">
+            <li className="cursor-pointer tracking-wider relative text-white line">Skills</li>
+          </a>
+          <a href="#contact">
+            <li className="cursor-pointer tracking-wider relative text-white line">Contact</li>
+          </a>
         </ul>
         <div
           id="social-icons"
@@ -48,7 +58,7 @@ export default function Navbar({ contactHandlerFn, mobNavFn }: Props) {
           onClick={mobNavFn}
         />
         <Sun
-          className="bg-stone-700 md:p-6 rounded-tr-lg rounded-br-lg w-10 h-16 md:size-20 px-2 cursor-pointer"
+          className="bg-stone-700 md:p-8 rounded-tr-lg rounded-br-lg w-10 h-16 md:size-20 px-2 cursor-pointer text-md"
           onClick={themeHandler}
         />
       </nav>

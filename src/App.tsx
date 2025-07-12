@@ -1,12 +1,15 @@
 import "./App.css";
-import { BaselineCircle, ExternalLink, Github, GithubSquare } from "./assets/svgicons";
+
+import Contact from "./components/Contact";
 import ContactDialog from "./components/ContactDialog";
 import Cooperate from "./components/Cooperate";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import MobNav from "./components/MobNav";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 import Qualification from "./components/Qualification";
-import ProjectSlider from "./components/swiper/projects-slider";
+import Skills from "./components/Skills";
 
 function App() {
   function ContactDialogHandler() {
@@ -34,16 +37,10 @@ function App() {
       </section>
       <Cooperate />
       <Qualification />
-      <section
-        id="projects"
-        className="min-h-[650px] w-10/12 mx-auto mt-7 rounded-2xl p-10 bg-primary-bg">
-        <div className="flex gap-2 items-center text-lg text-primary-color">
-          <BaselineCircle className="size-2" />
-          <p className="font-secondary-font tracking-widest">Projects</p>
-        </div>
-        <h1 className="font-primary-font text-4xl font-medium">My Recent Works</h1>
-        <ProjectSlider />
-      </section>
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
     </>
   );
 }

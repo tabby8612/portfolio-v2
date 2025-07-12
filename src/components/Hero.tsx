@@ -4,12 +4,13 @@ import HeroSlider from "./swiper/hero-slider";
 import { OutlineFileDownload } from "@/assets/svgicons";
 import CV from "@/assets/Tabish CV 08-Jul.pdf";
 import profileImage from "@/assets/profolioimage.png";
+import { Cpp, Css3, Javascript, Laravel, Livewire, Mongodb, Php, React, Tailwindcss, Typescript } from "@/assets/languagesicons";
 
 export default function Hero() {
   return (
     <div
       id="hero"
-      className="dark:bg-primary-bg md:flex pt-7 relative ">
+      className="dark:bg-primary-bg bg-white md:flex pt-7 relative rounded-md">
       <BorderBeam
         borderWidth={3}
         size={100}
@@ -46,7 +47,7 @@ export default function Hero() {
           <div
             id="stack-slider"
             className="pt-10 md:w-[150%] w-[100%]">
-            <HeroSlider />
+            <HeroSlider slides={[<Javascript />, <Typescript />, <React />, <Tailwindcss />, <Php />, <Laravel />, <Css3 />, <Cpp />, <Livewire />, <Mongodb />]} />
           </div>
           <div className="relative ml-20 pt-5 hidden md:block">
             <p className="absolute right-10 top-1/2 bottom-1/2 dark:text-white/70">...and more</p>
