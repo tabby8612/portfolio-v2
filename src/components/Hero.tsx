@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="dark:bg-primary-bg bg-white md:flex pt-7 relative rounded-md">
+      className="dark:bg-primary-bg bg-white lg:flex pt-7 relative rounded-md">
       <BorderBeam
         borderWidth={3}
         size={100}
@@ -22,8 +22,8 @@ export default function Hero() {
       />
       <div
         id="hero-text"
-        className="md:size-1/2 pl-7 relative">
-        <p className="md:text-xl text-xs font-primary-font pt-5">
+        className="lg:size-1/2 pl-7 relative">
+        <p className="lg:text-xl sm:text-xs md:text-lg font-primary-font pt-5">
           <span className="text-secondary-color">{"<span>"}</span>
           <TypingText
             text={"Hey, I am Tabish Sajwani"}
@@ -33,7 +33,7 @@ export default function Hero() {
           <span className="text-secondary-color">{"</span>"}</span>
         </p>
         <div className="relative mt-7">
-          <h1 className="md:text-5xl text-3xl font-semibold font-primary-font pt-5 md:after:w-7 after:w-4 md:after:h-1 after:h-1 dark:after:bg-white after:bg-black after:absolute after:bottom-0 after:animate-caret-blink after:duration-75">
+          <h1 className="lg:text-5xl sm:text-3xl md:text-2xl font-semibold font-primary-font pt-5 lg:after:w-7 after:w-4 md:after:h-1 after:h-1 dark:after:bg-white after:bg-black after:absolute after:bottom-0 after:animate-caret-blink after:duration-75">
             Senior <span className="text-primary-color">{"{Full Stack}"}</span> Web & App Developer
           </h1>
         </div>
@@ -43,10 +43,10 @@ export default function Hero() {
           <span className="text-secondary-color">React</span>, and <span className="text-secondary-color">Laravel</span>... I can deliver web solutions that are both innovative and robust.
           <span className="text-secondary-color">{"</p>"}</span>{" "}
         </p>
-        <div className="grid md:grid-cols-2 grid-cols-1">
+        <div className="grid lg:grid-cols-2 grid-cols-1">
           <div
             id="stack-slider"
-            className="pt-10 md:w-[150%] w-[100%]">
+            className="pt-10 lg:w-[150%] w-[100%]">
             <HeroSlider slides={[<Javascript />, <Typescript />, <React />, <Tailwindcss />, <Php />, <Laravel />, <Css3 />, <Cpp />, <Livewire />, <Mongodb />]} />
           </div>
           <div className="relative ml-20 pt-5 hidden md:block">
@@ -67,7 +67,7 @@ export default function Hero() {
       </div>
       <div
         id="hero-image"
-        className="mx-auto">
+        className="mx-auto flex justify-center items-center">
         <img
           src={profileImage}
           alt="Tabish photo"

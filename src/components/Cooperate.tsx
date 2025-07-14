@@ -58,13 +58,13 @@ export default function Cooperate() {
           }}
         />
       }
-      <div className=" md:w-1/2 mx-auto py-7 text-center">
+      <div className="lg:w-1/2 mx-auto py-7 text-center">
         <p className="text-primary-color font-primary-font text-md my-4">🟢 Cooperation</p>
         <h1 className="font-primary-font text-3xl text-stone-400">
           <span className="dark:text-white text-black">Designing solutions</span> customized to meet your requirements
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 w-11/12 mx-auto gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 mx-auto gap-6">
         {CARDS.map((item) => (
           <div
             className="group rounded-md border-1 border-stone-600 px-5 py-15 hover:-translate-y-1.5 duration-500"

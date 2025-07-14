@@ -47,7 +47,7 @@ export default function EducationTimeline() {
           <TimelineHeader>
             <TimelineSeparator className="group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6.5 " />
             <TimelineDate>{item.date}</TimelineDate>
-            <TimelineTitle className="text-lg font-primary-font text-primary-color">{item.title}</TimelineTitle>
+            <TimelineTitle className="lg:text-lg mt-4 font-primary-font text-primary-color">{item.title}</TimelineTitle>
             <TimelineIndicator className="group-data-completed/timeline-item:bg-primary group-data-completed/timeline-item:text-primary-foreground flex size-6 items-center justify-center group-data-completed/timeline-item:border-none group-data-[orientation=vertical]/timeline:-left-7 bg-white">
               <CheckIcon
                 className="group-not-data-completed/timeline-item:hidden  "

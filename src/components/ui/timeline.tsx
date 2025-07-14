@@ -12,13 +12,13 @@ type TimelineContextValue = {
 // Context
 const TimelineContext = React.createContext<TimelineContextValue | undefined>(undefined);
 
-const useTimeline = () => {
-  const context = React.useContext(TimelineContext);
-  if (!context) {
-    throw new Error("useTimeline must be used within a Timeline");
-  }
-  return context;
-};
+// const useTimeline = () => {
+//   const context = React.useContext(TimelineContext);
+//   if (!context) {
+//     throw new Error("useTimeline must be used within a Timeline");
+//   }
+//   return context;
+// };
 
 // Components
 interface TimelineProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -26,6 +26,7 @@ interface TimelineProps extends React.HTMLAttributes<HTMLDivElement> {
   value?: number;
   onValueChange?: (value: number) => void;
   orientation?: "horizontal" | "vertical";
+  isActive?: boolean;
 }
 
 function Timeline({ defaultValue = 1, value, onValueChange, orientation = "vertical", className, ...props }: TimelineProps) {
@@ -99,7 +100,7 @@ interface TimelineIndicatorProps extends React.HTMLAttributes<HTMLDivElement> {
   asChild?: boolean;
 }
 
-function TimelineIndicator({ asChild = false, className, children, ...props }: TimelineIndicatorProps) {
+function TimelineIndicator({ className, children, ...props }: TimelineIndicatorProps) {
   return (
     <div
       data-slot="timeline-indicator"
@@ -120,7 +121,7 @@ interface TimelineItemProps extends React.HTMLAttributes<HTMLDivElement> {
   isActive: boolean;
 }
 
-function TimelineItem({ step, className, isActive, ...props }: TimelineItemProps) {
+function TimelineItem({ className, isActive, ...props }: TimelineItemProps) {
   return (
     <div
       data-slot="timeline-item"

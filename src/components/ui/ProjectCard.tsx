@@ -15,10 +15,10 @@ export default function ProjectCard({ image, title, description, category, clien
   return (
     <div
       id="slide-card"
-      className="mt-15 flex gap-8">
+      className="mt-15 lg:flex gap-8">
       <div
         id="project-image"
-        className="w-1/2 h-9/12">
+        className="lg:w-1/2 h-9/12 mb-5">
         <img
           src={image}
           alt={title}
@@ -27,7 +27,7 @@ export default function ProjectCard({ image, title, description, category, clien
       </div>
       <div
         id="project-text"
-        className="w-1/2">
+        className="lg:w-1/2">
         <h1 className="text-4xl font-primary-font font-medium text-primary-color">{title}</h1>
         <p className="dark:text-white/50 mt-3">{description}</p>
         <div className="flex gap-2 items-center text-md text-secondary-color mt-5">

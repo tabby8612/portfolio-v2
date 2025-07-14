@@ -7,10 +7,10 @@ export default function Qualification() {
   return (
     <section
       id="qualifications"
-      className="w-11/12 mt-10 rounded-2xl px-15 mx-auto grid grid-cols-1 md:grid-cols-2 gap-7 relative">
+      className="w-11/12 mt-10 rounded-2xl px-5 lg:px-15 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-7 relative ">
       <div
         id="education"
-        className="dark:bg-primary-bg bg-white rounded-lg p-8 relative">
+        className="dark:bg-primary-bg bg-white rounded-lg p-8 relative ">
         <BorderBeam
           borderWidth={3}
           size={100}
@@ -20,9 +20,10 @@ export default function Qualification() {
             duration: 10,
           }}
         />
-        <div className="flex gap-3 items-center my-4">
+
+        <div className="flex gap-3 items-center my-4 w-full">
           <DegreeHat className="text-primary-color" />
-          <h1 className="text-4xl font-primary-font font-medium">Education</h1>
+          <h1 className="text-xl lg:text-4xl font-primary-font font-medium">Education</h1>
         </div>
         <EducationTimeline />
       </div>
@@ -40,7 +41,7 @@ export default function Qualification() {
         />
         <div className="flex gap-3 items-center my-4">
           <ThreeStarsSolid className="text-primary-color" />
-          <h1 className="text-4xl font-primary-font font-medium">Certificates</h1>
+          <h1 className="text-xl lg:text-4xl font-primary-font font-medium">Certificates</h1>
         </div>
         <CertificateTimeline />
       </div>

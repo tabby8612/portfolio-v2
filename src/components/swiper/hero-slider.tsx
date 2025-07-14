@@ -2,8 +2,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/bundle";
+// import "swiper/css";
+// import "swiper/bundle";
+import "swiper/swiper-bundle.css";
 
 // import required modules
 import { Autoplay } from "swiper/modules";

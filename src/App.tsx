@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Qualification from "./components/Qualification";
 import Skills from "./components/Skills";
+import ScrollTop from "./components/ui/ScrollTop";
 
 function App() {
   function ContactDialogHandler() {
@@ -26,9 +27,10 @@ function App() {
 
   return (
     <>
+      <ScrollTop />
       <ContactDialog dialogFn={ContactDialogHandler} />
       <MobNav mobNavFn={mobNavHandler} />
-      <section className="dark:bg-black dark:text-white min-h-[650px] w-10/12 mx-auto mt-7 rounded-2xl">
+      <section className="dark:bg-black dark:text-white  w-10/12 mx-auto mt-7 rounded-2xl">
         <Navbar
           contactHandlerFn={ContactDialogHandler}
           mobNavFn={mobNavHandler}

@@ -13,16 +13,18 @@ export default function Navbar({ contactHandlerFn, mobNavFn }: Props) {
 
   return (
     <>
-      <nav className="bg-primary-bg flex gap-5 justify-between h-16 md:h-20 items-center rounded-2xl relative z-10 top-2">
+      <nav
+        id="nav"
+        className="bg-primary-bg flex gap-5 justify-between h-16 lg:h-20 items-center rounded-2xl relative z-10 top-2">
         <AlignLeft
-          className="bg-stone-700 md:p-8 p-5 rounded-tl-lg rounded-bl-lg cursor-pointer text-white hidden md:block text-md"
+          className="bg-stone-700 lg:p-8 p-5 rounded-tl-lg rounded-bl-lg cursor-pointer text-white hidden md:block text-md"
           onClick={contactHandlerFn}
         />
         <div className="flex gap-1 items-center">
-          <CodeSlash className="font-black text-lime-400 md:p-3 p-6 " />
-          <p className="md:text-xl text-md font-primary-font bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent pr-3">Tabish Sajwani</p>
+          <CodeSlash className="font-black text-lime-400 lg:p-3 p-6 " />
+          <p className="lg:text-xl text-md font-primary-font bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent pr-3">Tabish Sajwani</p>
         </div>
-        <ul className="md:flex gap-10 font-primary-font text-lg hidden">
+        <ul className="lg:flex gap-10 font-primary-font text-lg hidden">
           <a href="#hero">
             <li className="cursor-pointer tracking-wider relative text-white line">Home</li>
           </a>
@@ -41,7 +43,7 @@ export default function Navbar({ contactHandlerFn, mobNavFn }: Props) {
         </ul>
         <div
           id="social-icons"
-          className="md:flex gap-5 hidden">
+          className="lg:flex gap-5 hidden">
           <a
             href="https://github.com/tabby8612"
             target="_blank">
@@ -54,11 +56,11 @@ export default function Navbar({ contactHandlerFn, mobNavFn }: Props) {
           </a>
         </div>
         <HamburgerButton
-          className="text-white w-7 md:size-0"
+          className="text-white w-7 lg:size-0"
           onClick={mobNavFn}
         />
         <Sun
-          className="bg-stone-700 md:p-8 rounded-tr-lg rounded-br-lg w-10 h-16 md:size-20 px-2 cursor-pointer text-md"
+          className="bg-stone-700 lg:p-8 rounded-tr-lg rounded-br-lg w-10 h-16 lg:size-20 px-2 cursor-pointer text-md"
           onClick={themeHandler}
         />
       </nav>

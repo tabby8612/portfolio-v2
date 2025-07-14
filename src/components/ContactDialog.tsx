@@ -8,7 +8,7 @@ export default function ContactDialog({ dialogFn }: Props) {
   return (
     <div
       id="contactDialog"
-      className=" dark:bg-primary-bg bg-white w-2xs h-screen absolute top-0 -translate-x-80 transition-transform delay-100 duration-500">
+      className=" dark:bg-primary-bg bg-white w-2xs h-screen absolute z-20 top-0 -translate-x-80 transition-transform delay-100 duration-500">
       <div className="relative w-11/12 mx-auto h-10/12 my-auto py-7 px-2">
         <span
           className="absolute top-5 right-0 text-lg text-secondary-color cursor-pointer"

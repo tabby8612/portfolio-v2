@@ -8,7 +8,7 @@ export default function MobNav({ mobNavFn }: Props) {
   return (
     <div
       id="movNav"
-      className=" dark:bg-primary-bg bg-white w-screen h-screen absolute z-10 top-0 -translate-x-100 transition-transform delay-100 duration-500 md:w-0">
+      className=" dark:bg-primary-bg bg-white w-screen h-screen absolute z-20 top-0 -translate-x-100 transition-transform delay-100 duration-500 md:w-0">
       <div className="relative w-11/12 mx-auto h-10/12 my-auto py-7 px-2 text-white">
         <div className="flex gap-1 items-center justify-between">
           <div className="flex gap-1 items-center">
